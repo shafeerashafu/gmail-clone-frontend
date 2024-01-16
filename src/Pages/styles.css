@@ -1,0 +1,13 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Responsive media query */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .main-content {
+      padding: 10px;
+    }
+  }

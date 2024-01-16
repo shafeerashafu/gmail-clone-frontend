@@ -4,6 +4,8 @@ import SideBar from '../Components/SideBar.jsx';
 import { Box, styled } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 import SuspenseLoader from '../Components/Common/SuspenseLoader.jsx';
+import './styles.css';
+// import ChartComponent from './ChartComponent.js';
 
 
 
@@ -27,6 +29,7 @@ const Main = () => {
           <Outlet context={{openDrawer}}/>
        </Suspense>
     </Wrapper>
+    
     
     </>
   )

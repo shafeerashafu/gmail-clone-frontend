@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { ListItem, Checkbox, Typography, Box, styled } from "@mui/material";
 import { StarBorder,Star} from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
@@ -41,6 +41,8 @@ const Date = styled(Typography)({
 const ListMail = ({email,selectedMails,setRefreshScreen,setselectedMails}) => {
   const navigate=useNavigate();
 
+ 
+
   const toggleStarredMailService = useAPI(API_URL.toggleStarredMails);
   const toggleStarredMail = () => {
     toggleStarredMailService.call({ id: email._id, value: !email.starred });
@@ -50,10 +52,14 @@ const ListMail = ({email,selectedMails,setRefreshScreen,setselectedMails}) => {
   const handleChange = () => {
     if (selectedMails.includes(email._id)) {
         setselectedMails(prevState => prevState.filter(id => id !== email._id));
+        
     } else {
         setselectedMails(prevState => [...prevState, email._id]);
+        
     }
 }
+
+
 
 
   return (
