@@ -23,5 +23,13 @@ export const API_URL = {
         endpoint: 'delete',
         method: 'DELETE'
     },
+    signUp: {
+        endpoint: 'signup',
+        method: 'POST'
+    },
+    login: {
+        endpoint: 'login',
+        method: 'POST'
+    }
 
 }

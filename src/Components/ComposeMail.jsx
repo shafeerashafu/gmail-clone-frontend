@@ -69,7 +69,6 @@ const ComposeMail = ({ openDialog , setOpenDialog}) => {
 
   const onValueChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value })
-    console.log(data)
   }
 
   const sendEmail = async (e) => {
