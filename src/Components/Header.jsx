@@ -53,14 +53,11 @@ const Header = ({ toggleDrawer }) => {
     try {
       const data = await logoutUser();
       if (data.code) {
-        alert("Logout Successful");
         localStorage.removeItem("isAuthenticated"); // Clear authentication token
-
         navigate("/login"); // Navigate to the login page
         
       } else {
         // Stay on the same page
-        alert(data.msg);
       }
     } catch (error) {
       
