@@ -39,7 +39,7 @@ const Login = () => {
 
   return (
     <>
-    <><p>Test Email Id : abc@gmail.com<br/>Test pwd : 123</p></>
+    
       <div className="login-form-container">
         <form onSubmit={handleSubmit} className="login-form">
           <label>Email:</label>
@@ -50,6 +50,7 @@ const Login = () => {
             placeholder="Enter your EmailId"
             required
           />
+          <p>Test Email Id : abc@gmail.com</p>
 
           <label>Password:</label>
           <input
@@ -59,6 +60,7 @@ const Login = () => {
             placeholder="Enter your Password"
             required
           />
+          <p>Test pwd : 123</p>
           <div className="form-footer">
             <button className="btn" type="submit">
               Login
